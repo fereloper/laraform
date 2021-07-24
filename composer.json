@@ -1,5 +1,5 @@
 {
-    "name": "fereloper/laravel-questionnaire",
+    "name": "fereloper/laraform",
     "description": "A simple questionnaire package to create, publish and analyze the survey/form.",
     "license": "MIT",
     "authors": [
