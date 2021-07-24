@@ -12,7 +12,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require fereloper/laravel-questionnaire
+$ composer require fereloper/laravel-form-response
 ```
 
 ## Usage
@@ -53,8 +53,8 @@ license. Please see the [license file](license.md) for more information.
 [ico-travis]: https://img.shields.io/travis/fereloper/laravel-questionnaire/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/fereloper/laravel-questionnaire
-[link-downloads]: https://packagist.org/packages/fereloper/laravel-questionnaire
+[link-packagist]: https://packagist.org/packages/fereloper/laravel-form-response
+[link-downloads]: https://packagist.org/packages/fereloper/laravel-form-response
 [link-travis]: https://travis-ci.org/fereloper/laravel-questionnaire
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/fereloper
