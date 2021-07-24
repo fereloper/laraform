@@ -16,6 +16,10 @@ $ composer require fereloper/laravel-questionnaire
 ```
 
 ## Usage
+Publish the migration into your local laravel project.
+```
+php artisan vendor:publish --provider="Fereloper\LaravelQuestionnaire\LaravelQuestionnaireServiceProvider" --tag="migrations"
+```
 
 ## Change log
 
