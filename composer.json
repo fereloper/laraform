@@ -1,0 +1,41 @@
+{
+    "name": "fereloper/laravel-questionnaire",
+    "description": "A simple questionnaire package to create, publish and analyze the survey/form.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Feroj Bepari",
+            "email": "feroj@fereloper.com",
+            "homepage": "https://feroj.me"
+        }
+    ],
+    "homepage": "https://github.com/fereloper/laravel-questionnaire",
+    "keywords": ["Laravel", "LaravelQuestionnaire"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "../../../vendor/phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fereloper\\LaravelQuestionnaire\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fereloper\\LaravelQuestionnaire\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fereloper\\LaravelQuestionnaire\\LaravelQuestionnaireServiceProvider"
+            ],
+            "aliases": {
+                "LaravelQuestionnaire": "Fereloper\\LaravelQuestionnaire\\Facades\\LaravelQuestionnaire"
+            }
+        }
+    }
+}
