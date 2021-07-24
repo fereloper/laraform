@@ -18,13 +18,7 @@ class LaravelQuestionnaireServiceProvider extends ServiceProvider
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
-        if (! class_exists('CreateQuestionnaireFormsTable')) {
-            $timestamp = date('Y_m_d_His', time());
-
-            $this->publishes([
-                __DIR__ . '/../migrations/create_questionnaire_forms_table.php.stub' => database_path("/migrations/{$timestamp}_create_questionnaire_forms_table.php"),
-            ], 'migrations');
-        }
+        $this->bootMigrations();
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
@@ -86,5 +80,31 @@ class LaravelQuestionnaireServiceProvider extends ServiceProvider
 
         // Registering package commands.
         // $this->commands([]);
+    }
+
+    function bootMigrations() {
+        if (! class_exists('CreateQuestionnaireFormsTable')) {
+            $timestamp = date('Y_m_d_His', time());
+
+            $this->publishes([
+                __DIR__ . '/../migrations/create_questionnaire_forms_table.php.stub' => database_path("/migrations/{$timestamp}_create_questionnaire_forms_table.php"),
+            ], 'migrations');
+        }
+
+        if (! class_exists('CreateQuestionnaireFormQuestionsTable')) {
+            $timestamp = date('Y_m_d_His', time() + 1);
+
+            $this->publishes([
+                __DIR__ . '/../migrations/create_questionnaire_form_questions_table.php.stub' => database_path("/migrations/{$timestamp}_create_questionnaire_form_questions_table.php"),
+            ], 'migrations');
+        }
+
+        if (! class_exists('CreateQuestionnaireFormResponsesTable')) {
+            $timestamp = date('Y_m_d_His', time() + 2);
+
+            $this->publishes([
+                __DIR__ . '/../migrations/create_questionnaire_form_responses_table.php.stub' => database_path("/migrations/{$timestamp}_create_questionnaire_form_responses_table.php"),
+            ], 'migrations');
+        }
     }
 }
