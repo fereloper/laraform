@@ -9,6 +9,7 @@
             "homepage": "https://feroj.me"
         }
     ],
+    "version": "dev-master",
     "homepage": "https://github.com/fereloper/laravel-form-response",
     "keywords": ["Laravel", "LaravelQuestionnaire"],
     "require": {
