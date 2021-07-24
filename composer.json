@@ -9,7 +9,7 @@
             "homepage": "https://feroj.me"
         }
     ],
-    "homepage": "https://github.com/fereloper/laravel-questionnaire",
+    "homepage": "https://github.com/fereloper/laravel-form-response",
     "keywords": ["Laravel", "LaravelQuestionnaire"],
     "require": {
         "illuminate/support": "~7|~8"

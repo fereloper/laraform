@@ -1,6 +1,6 @@
 <?php
 
-namespace Fereloper\Models;
+namespace Fereloper\LaravelQuestionnaire\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
